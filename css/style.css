@@ -21,14 +21,24 @@ img {
   display: block;
 }
 
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url('../fonts/');
+  src: local('../fonts/MuseoSansCyrl-700'), url('../fonts/?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-700.woff') format('woff'), url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  /* width: 1440px;
+  margin: 0 auto; */
+
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: calc(20 / 14);
   font-weight: 400;
   color: var(--text-color-first);
-
-  background: url('../img/background.jpg');
 }
 
 .list {
@@ -45,15 +55,11 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid yellow;
 }
 
 .section {
   padding-top: 31px;
   padding-bottom: 104px;
-
-  outline: 1px solid blue;
 }
 
 .visually-hidden {
@@ -71,6 +77,12 @@ body {
 
 /* ----------------- HEADER ---------------- */
 .header {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto;
+  height: 154px;
+
   padding-top: 64px;
   padding-bottom: 64px;
 }
@@ -78,8 +90,6 @@ body {
 .header__wrapper {
   display: flex;
   align-items: center;
-
-  outline: 1px solid teal;
 }
 
 .nav {
@@ -117,6 +127,16 @@ body {
   margin-left: 21px;
 }
 /* ----------------- MAIN ---------------- */
+
+.main {
+  background-image: url('../img/background.jpg');
+  background-position: center -154px;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  padding-top: 30px;
+}
+
 .main__pre-title {
   margin-bottom: 16px;
 }
@@ -130,9 +150,7 @@ body {
 .rating__star {
   display: flex;
   align-items: center;
-}
-
-.rating__star {
+  cursor: pointer;
   margin-right: 9px;
 }
 
@@ -141,7 +159,7 @@ body {
 }
 
 .main__title {
-  font-weight: 600;
+  font-family: 'Museo Sans Cyrl 700';
   font-size: 76px;
   line-height: 91px;
 }
@@ -163,6 +181,7 @@ body {
   line-height: calc(16 / 14);
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 /* ----------------- FOOTER ---------------- */
 
@@ -179,6 +198,7 @@ body {
 }
 
 .footer__copy {
+  color: #505050;
 }
 
 .menu {
@@ -192,5 +212,5 @@ body {
 }
 
 .menu__link {
-  color: var(--text-color-first);
+  color: #505050;
 }
