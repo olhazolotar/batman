@@ -14,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Batman</title>
   </head>
@@ -66,7 +67,7 @@
 
     <main class="main">
       <section class="section">
-        <div class="container">
+        <div class="container wrapper">
           <p class="main__pre-title">2022, боевик, триллер</p>
 
           <div class="rating">
@@ -126,13 +127,54 @@
           </div>
 
           <h1 class="main__title">Бэтмен</h1>
-          <p class="main__content">
-            После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением
-            беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты,
-            загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом
-            оказывается сам Бэтмен.
-          </p>
+          <div class="main__description-wrap">
+            <p class="main__content">
+              После двух лет поисков правосудия на улицах Готэма для своих сограждан Бэтмен становится олицетворением
+              беспощадного возмездия. Когда в городе происходит серия жестоких нападений на представителей элиты,
+              загадочные улики приводят Брюса Уэйна в самые темные закоулки преступного мира. Теперь под прицелом
+              оказывается сам Бэтмен.
+            </p>
+            <div class="main__button-play">
+              <div class="main__button-dark">
+                <img src="./img/play.svg" alt="проигрыватель" />
+              </div>
+            </div>
+          </div>
           <button type="button" class="btn">Купить билеты</button>
+
+          <div class="main-slider_wrap">
+            <div class="main-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="main-slider__slide swiper-slide">
+                  <img class="main-slider_img" src="./img/slide1.png" alt="Трейлер" />
+                  <span class="main-slider__span">Трейлер #1</span>
+                </div>
+                <div class="main-slider__slide swiper-slide">
+                  <img class="main-slider_img" src="./img/slide2.png" alt="Трейлер" />
+                  <span class="main-slider__span">Трейлер #2</span>
+                </div>
+                <div class="main-slider__slide swiper-slide">
+                  <img class="main-slider_img" src="./img/slide1.png" alt="Трейлер" />
+                  <span class="main-slider__span">Трейлер #3</span>
+                </div>
+                <div class="main-slider__slide swiper-slide">
+                  <img class="main-slider_img" src="./img/slide2.png" alt="Трейлер" />
+                  <span class="main-slider__span">Трейлер #4</span>
+                </div>
+                <div class="main-slider__slide swiper-slide">
+                  <img class="main-slider_img" src="./img/slide1.png" alt="Трейлер" />
+                  <span class="main-slider__span">Трейлер #5</span>
+                </div>
+                <div class="main-slider__slide swiper-slide">
+                  <img class="main-slider_img" src="./img/slide2.png" alt="Трейлер" />
+                  <span class="main-slider__span">Трейлер #6</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-slider__arrow">
+              <img class="arrow-img" src="./img/arrow.svg" alt="стрелка" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -154,5 +196,7 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
